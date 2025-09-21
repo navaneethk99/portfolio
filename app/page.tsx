@@ -97,9 +97,7 @@ const Page = () => {
                     ></img>
                   </div>
                   <div>
-                    <p className="text-sm">
-                      Stratign (Internship) - Software Developer
-                    </p>
+                    <p className="text-sm">Stratign (Internship)</p>
                     <p className="font-bold">June 2025 - July 2025</p>
                   </div>
                 </div>
@@ -518,9 +516,7 @@ const Page = () => {
               ></img>
             </div>
             <div>
-              <p className="text-sm">
-                Stratign (Internship) - Software Developer
-              </p>
+              <p className="text-sm">Stratign (Internship)</p>
               <p className="font-bold">June 2025 - July 2025</p>
             </div>
           </div>
