@@ -554,7 +554,7 @@ const Page = () => {
 
         <div className="px-5 mt-5 mb-30">
           <h1 className="font-bold mt-7">External Links</h1>
-          <div className="mt-4 mb-10 border rounded-md border-gray-600 p-3 grid grid-cols-4 gap-2 justify-center items-center">
+          <div className="mt-4 border rounded-md border-gray-600 p-3 grid grid-cols-4 gap-2 justify-center items-center">
             <a href="https://www.linkedin.com/in/navaneeth-krishna-001644321/">
               <div className="flex items-center justify-center gap-2">
                 <div className="w-8 h-8 bg-white rounded-full">
