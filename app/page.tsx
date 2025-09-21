@@ -320,7 +320,13 @@ const Page = () => {
         </div>
         <div className="w-full p-5">
           <div className="flex items-center">
-            <div className="w-25 h-25 rounded-full bg-white"></div>
+            <div className="w-25 h-25 rounded-full bg-white">
+              <img
+                src="/images/88372623.jpeg"
+                className="w-full h-full rounded-full"
+                alt="profile"
+              />
+            </div>
             <div className="h-full ml-5">
               <p className="text-2xl text-gray-400">navaneethk99</p>
               <div className="mt-2 text-sm text-gray-500 flex">
