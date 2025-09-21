@@ -552,7 +552,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="px-5 mt-5 mb-30">
+        <div className="px-5 mt-5 mb-10">
           <h1 className="font-bold mt-7">External Links</h1>
           <div className="mt-4 border rounded-md border-gray-600 p-3 grid grid-cols-4 gap-2 justify-center items-center">
             <a href="https://www.linkedin.com/in/navaneeth-krishna-001644321/">
