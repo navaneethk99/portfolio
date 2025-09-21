@@ -313,7 +313,7 @@ const Page = () => {
 
       {/* -------------- MOBILE ONLY VIEW -------------- */}
 
-      <div className="w-screen h-screen bg-[#0D1117] mobile-only">
+      <div className="w-screen h-screen bg-[#0D1117] mobile-only overflow-x-hidden">
         <div className="bg-black flex justify-center items-center text-xl h-15 border-b-1 border-gray-500 gap-3">
           <FontAwesomeIcon icon={faGithub} className="w-8" />
           <p className="font-semibold">navaneethk99</p>
