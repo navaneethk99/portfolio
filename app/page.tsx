@@ -1,11 +1,16 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faBuildingColumns,
+  faGraduationCap,
+  faLocationDot,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const Page = () => {
   return (
     <>
-      <div className="bg-red-500 w-screen h-screen">
+      <div className="w-screen h-screen">
         {/* Top Bar */}
         <div className="bg-black w-full h-15 border-b border-gray-500 flex items-center px-2 gap-3">
           <div className="w-10 h-full flex items-center justify-center mt-1">
@@ -40,14 +45,28 @@ const Page = () => {
                 following
               </div>
 
-              <p className="ml-10 text-sm mt-5 font-bold">
-                Vellore Institute of Technology
+              <p className="ml-10 text-sm mt-5 font-bold flex items-center gap-2">
+                <FontAwesomeIcon
+                  icon={faBuildingColumns}
+                  className="w-4 text-gray-600"
+                />
+                <p className="mt-1">Vellore Institute of Technology</p>
               </p>
-              <p className="ml-10 text-sm mt-1 font-bold">Vellore</p>
-              <p className="ml-10 text-sm mt-1 font-bold">
+              <p className="ml-10 text-sm mt-1 font-bold flex items-center gap-2">
+                <FontAwesomeIcon
+                  icon={faLocationDot}
+                  className="w-3 text-gray-600"
+                />
+                <p className="mt-1">Vellore</p>
+              </p>
+              <p className="ml-10 text-sm mt-1 font-bold flex items-center gap-2">
+                <FontAwesomeIcon
+                  icon={faGraduationCap}
+                  className="w-4 text-gray-600"
+                />
                 BTech Computer Science Engineering
               </p>
-              <p className="ml-10 text-xs text-gray-500">
+              <p className="ml-16 text-xs text-gray-500">
                 Artificial Intelligence and Data Engineering
               </p>
 
@@ -115,11 +134,11 @@ const Page = () => {
           </div>
 
           {/* Main Content */}
-          <div className="bg-[#0D1117] w-full h-full pt-10 px-8 pr-10">
+          <div className="bg-[#0D1117] w-full h-full pt-10 px-8 pr-10 overflow-y-auto">
             <h1 className="font-bold">Popular Repositories</h1>
 
             {/* Repo Grid */}
-            <div className="grid grid-cols-2 gap-5 mt-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-4">
               <div className="w-full h-full rounded-md border border-gray-600 p-4">
                 <h1 className="font-bold text-md text-blue-500 mb-2">codigo</h1>
                 <p className="text-sm text-gray-400">
@@ -241,7 +260,7 @@ const Page = () => {
             </div>
 
             <h1 className="font-bold mt-7">External Links</h1>
-            <div className="mt-4 border rounded-md border-gray-600 p-3 flex gap-20 justify-center items-center">
+            <div className="mt-4 border rounded-md border-gray-600 p-3 grid lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-1 grid-cols-1 gap-2 justify-center items-center">
               <a href="https://www.linkedin.com/in/navaneeth-krishna-001644321/">
                 <div className="flex items-center justify-center gap-2">
                   <div className="w-8 h-8 bg-white rounded-full">
