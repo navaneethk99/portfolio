@@ -191,13 +191,104 @@ const Page = () => {
                 </div>
               </div>
 
-              <div className="w-full h-full rounded-md border border-gray-600 p-4"></div>
+              <div className="w-full h-full rounded-md border border-gray-600 p-4">
+                <h1 className="font-bold text-md text-blue-500 mb-2">
+                  satellite call monitoring dashboard
+                </h1>
+                <p className="text-sm text-gray-400">
+                  A dashboard for visualizing data from an advanced satellite
+                  monitoring system. Features include audio call transcription
+                  from Thuraya, Iridium, and ISAT satellite phones, and
+                  interactive graphs for easy data analysis and insights.
+                </p>
+                <div className="flex gap-2 mt-2">
+                  <div className="bg-yellow-500 w-fit rounded-full px-2 py-1 text-xs font-bold">
+                    React JS
+                  </div>
+                  <div className="bg-green-500 w-fit rounded-full px-2 py-1 text-xs font-bold">
+                    HTML
+                  </div>
+                  <div className="bg-red-500 w-fit rounded-full px-2 py-1 text-xs font-bold">
+                    CSS
+                  </div>
+                  <div className="bg-blue-500 w-fit rounded-full px-2 py-1 text-xs font-bold">
+                    ReCharts
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* About Me */}
-            <h1 className="font-bold mt-10">Description</h1>
-            <div className="mt-5 border rounded-md border-gray-600 p-4">
-              about me
+            <h1 className="font-bold mt-7">Description</h1>
+            <div className="mt-4 border rounded-md border-gray-600 p-4 text-gray-400">
+              Hi, I’m{" "}
+              <span className="text-blue-300 font-semibold">Navaneeth</span>, a
+              passionate tech enthusiast and budding software developer with a
+              strong{" "}
+              <span className="text-blue-300 font-semibold">
+                focus on full-stack development
+              </span>{" "}
+              and interactive applications. I’ve been fascinated by coding since
+              I was a little kid, and that curiosity has driven me to explore
+              and build a variety of projects over the years. I have{" "}
+              <span className="text-blue-300 font-semibold">
+                hands-on experience building web and mobile apps
+              </span>
+              , and I enjoy creating projects that combine functionality with a
+              smooth user experience. When I’m not coding, I like exploring new
+              frameworks, brainstorming project ideas, and staying up-to-date
+              with the latest in tech and programming education.
+            </div>
+
+            <h1 className="font-bold mt-7">External Links</h1>
+            <div className="mt-4 border rounded-md border-gray-600 p-3 flex gap-20 justify-center items-center">
+              <a href="https://www.linkedin.com/in/navaneeth-krishna-001644321/">
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-8 h-8 bg-white rounded-full">
+                    <img
+                      src="/images/2496097.png"
+                      className="w-full h-full rounded-sm"
+                    ></img>
+                  </div>
+                  <p>Linkedin</p>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/nahweneat">
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-8 h-8 rounded-sm overflow-hidden">
+                    <img
+                      src="/images/instagram-logo_1199-122.jpg"
+                      className="w-full h-full object-cover scale-150"
+                      alt="Instagram logo"
+                    />
+                  </div>
+                  <p>Instagram</p>
+                </div>
+              </a>
+
+              <a href="https://github.com/navaneethk99">
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-8 h-8 rounded-sm">
+                    <img
+                      src="/images/GitHub-Mark-ea2971cee799.png"
+                      className="w-full h-full rounded-sm"
+                    ></img>
+                  </div>
+                  <p>Github</p>
+                </div>
+              </a>
+
+              <a href="https://leetcode.com/u/NavaneethKrishna01/">
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-8 h-8 bg-white rounded-sm p-1">
+                    <img
+                      src="/images/2944960.webp"
+                      className="w-full h-full object-cover"
+                    ></img>
+                  </div>
+                  <p>Leetcode</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
