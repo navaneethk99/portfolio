@@ -1,12 +1,7 @@
 import { faGithub, faReadme } from "@fortawesome/free-brands-svg-icons";
-import {
-  faBook,
-  faBuildingColumns,
-  faGlobe,
-  faGraduationCap,
-  faLocationDot,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBook, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
 
 const Page = () => {
@@ -25,24 +20,29 @@ const Page = () => {
           </div>
 
           <div className="w-full h-8 flex gap-3 text-sm">
-            <a href="/" className="w-fit h-full px-3 flex gap-3 items-center">
+            <Link
+              href="/"
+              className="w-fit h-full px-3 flex gap-3 items-center"
+            >
               <FontAwesomeIcon icon={faReadme} className="w-4 text-gray-400" />{" "}
               Overview
-            </a>
-            <a
+            </Link>
+
+            <Link
               href="/repositories/codigo"
               className="w-fit h-full px-3 font-semibold border-b-2 border-orange-400 flex gap-2 items-center"
             >
               <FontAwesomeIcon icon={faBook} className="w-3 text-gray-400" />{" "}
               Repositories
-            </a>
-            <a
+            </Link>
+
+            <Link
               href="/experiences"
               className="w-fit h-full px-3 flex gap-3 items-center"
             >
               <FontAwesomeIcon icon={faGlobe} className="w-4 text-gray-400" />{" "}
               Experience
-            </a>
+            </Link>
           </div>
         </div>
 
