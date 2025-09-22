@@ -1,6 +1,8 @@
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faReadme } from "@fortawesome/free-brands-svg-icons";
 import {
+  faBook,
   faBuildingColumns,
+  faGlobe,
   faGraduationCap,
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
@@ -12,13 +14,39 @@ const Page = () => {
     <>
       <div className="w-screen h-screen desktop-only">
         {/* Top Bar */}
-        <div className="bg-black w-full h-15 border-b border-gray-500 flex items-center px-2 gap-3">
-          <div className="w-8 h-full flex items-center justify-center mt-1 ml-4">
-            <FontAwesomeIcon icon={faGithub} />
+        <div className="bg-black w-full h-23 border-b border-gray-500 flex flex-col justify-end px-2 gap-3">
+          <div className="flex gap-3 items-center">
+            <div className="w-8 h-full flex items-center justify-center mt-1 ml-4">
+              <FontAwesomeIcon icon={faGithub} />
+            </div>
+            <a href="https://github.com/navaneethk99">
+              <p className="font-bold text-md">navaneethk99</p>
+            </a>
           </div>
-          <a href="https://github.com/navaneethk99">
-            <p className="font-bold text-md">navaneethk99</p>
-          </a>
+
+          <div className="w-full h-8 flex gap-3 text-sm">
+            <a
+              href="/"
+              className="w-fit h-full px-3 font-semibold border-b-2 border-orange-400 flex gap-2 items-center"
+            >
+              <FontAwesomeIcon icon={faReadme} className="w-4 text-gray-400" />{" "}
+              Overview
+            </a>
+            <a
+              href="/repositories/codigo"
+              className="w-fit h-full px-3 flex gap-3 items-center"
+            >
+              <FontAwesomeIcon icon={faBook} className="w-3 text-gray-400" />{" "}
+              Repositories
+            </a>
+            <a
+              href="/experiences"
+              className="w-fit h-full px-3 flex gap-3 items-center"
+            >
+              <FontAwesomeIcon icon={faGlobe} className="w-4 text-gray-400" />{" "}
+              Experience
+            </a>
+          </div>
         </div>
 
         <div className="flex h-full w-full">
@@ -74,59 +102,64 @@ const Page = () => {
               <div className="w-full border-t border-gray-700 ml-10 mt-5">
                 <h1 className="mt-5 font-bold text-lg">Organisations</h1>
 
-                <div className="mt-2 w-full flex gap-2">
-                  <div className="w-10 h-10 rounded-md">
-                    <img
-                      src="/images/1_gpyPa2lnqhHz5GeoUq-vgQ.png"
-                      className="w-full h-full rounded-md"
-                    ></img>
+                <a href="https://www.acmvit.in/">
+                  <div className="mt-2 w-full flex gap-2">
+                    <div className="w-10 h-10 rounded-md">
+                      <img
+                        src="/images/1_gpyPa2lnqhHz5GeoUq-vgQ.png"
+                        className="w-full h-full rounded-md"
+                      ></img>
+                    </div>
+                    <div>
+                      <p className="text-sm">
+                        Association for Computing Machinery
+                      </p>
+                      <p className="font-bold">May 2025 - Present</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-sm">
-                      Association for Computing Machinery
-                    </p>
-                    <p className="font-bold">May 2025 - Present</p>
+                </a>
+                <a href="https://www.stratign.com/">
+                  <div className="mt-2 w-full flex gap-2">
+                    <div className="w-10 h-10 rounded-md">
+                      <img
+                        src="/images/stratign_logo.jpeg"
+                        className="w-full h-full rounded-md"
+                      ></img>
+                    </div>
+                    <div>
+                      <p className="text-sm">Stratign (Internship)</p>
+                      <p className="font-bold">June 2025 - July 2025</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="mt-2 w-full flex gap-2">
-                  <div className="w-10 h-10 rounded-md">
-                    <img
-                      src="/images/stratign_logo.jpeg"
-                      className="w-full h-full rounded-md"
-                    ></img>
+                </a>
+                <a href="https://vit.ac.in/">
+                  <div className="mt-2 w-full flex gap-2">
+                    <div className="w-10 h-10 rounded-md bg-white p-1">
+                      <img
+                        src="/images/Vellore_Institute_of_Technology_seal_2017.svg.png"
+                        className="w-full h-full"
+                      ></img>
+                    </div>
+                    <div>
+                      <p className="text-sm">Vellore Institute of Technology</p>
+                      <p className="font-bold">July 2024 - Present</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-sm">Stratign (Internship)</p>
-                    <p className="font-bold">June 2025 - July 2025</p>
+                </a>
+                <a href="https://www.dpsgs.org/vasundhara/">
+                  <div className="mt-2 w-full flex gap-2">
+                    <div className="w-10 h-10 rounded-md bg-white">
+                      <img
+                        src="/images/delhi_public_school_ghaziabad_vasundhara_logo.jpeg"
+                        className="w-full h-full rounded-md"
+                      ></img>
+                    </div>
+                    <div>
+                      <p className="text-sm">Delhi Public School Vasundhara</p>
+                      <p className="font-bold">April 2010 - April 2024</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="mt-2 w-full flex gap-2">
-                  <div className="w-10 h-10 rounded-md bg-white p-1">
-                    <img
-                      src="/images/Vellore_Institute_of_Technology_seal_2017.svg.png"
-                      className="w-full h-full"
-                    ></img>
-                  </div>
-                  <div>
-                    <p className="text-sm">Vellore Institute of Technology</p>
-                    <p className="font-bold">July 2024 - Present</p>
-                  </div>
-                </div>
-
-                <div className="mt-2 w-full flex gap-2">
-                  <div className="w-10 h-10 rounded-md bg-white">
-                    <img
-                      src="/images/delhi_public_school_ghaziabad_vasundhara_logo.jpeg"
-                      className="w-full h-full rounded-md"
-                    ></img>
-                  </div>
-                  <div>
-                    <p className="text-sm">Delhi Public School Vasundhara</p>
-                    <p className="font-bold">April 2010 - April 2024</p>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -494,58 +527,62 @@ const Page = () => {
 
         <div className="w-full ml-10 mt-5">
           <h1 className="mt-5 font-bold text-lg">Organisations</h1>
-
-          <div className="mt-2 w-full flex gap-2">
-            <div className="w-10 h-10 rounded-md">
-              <img
-                src="/images/1_gpyPa2lnqhHz5GeoUq-vgQ.png"
-                className="w-full h-full rounded-md"
-              ></img>
+          <a href="https://acmvit.in">
+            <div className="mt-2 w-full flex gap-2">
+              <div className="w-10 h-10 rounded-md">
+                <img
+                  src="/images/1_gpyPa2lnqhHz5GeoUq-vgQ.png"
+                  className="w-full h-full rounded-md"
+                ></img>
+              </div>
+              <div>
+                <p className="text-sm">Association for Computing Machinery</p>
+                <p className="font-bold">May 2025 - Present</p>
+              </div>
             </div>
-            <div>
-              <p className="text-sm">Association for Computing Machinery</p>
-              <p className="font-bold">May 2025 - Present</p>
+          </a>
+          <a href="https://stratign.com">
+            <div className="mt-2 w-full flex gap-2">
+              <div className="w-10 h-10 rounded-md">
+                <img
+                  src="/images/stratign_logo.jpeg"
+                  className="w-full h-full rounded-md"
+                ></img>
+              </div>
+              <div>
+                <p className="text-sm">Stratign (Internship)</p>
+                <p className="font-bold">June 2025 - July 2025</p>
+              </div>
             </div>
-          </div>
-
-          <div className="mt-2 w-full flex gap-2">
-            <div className="w-10 h-10 rounded-md">
-              <img
-                src="/images/stratign_logo.jpeg"
-                className="w-full h-full rounded-md"
-              ></img>
+          </a>
+          <a href="https://vit.ac.in">
+            <div className="mt-2 w-full flex gap-2">
+              <div className="w-10 h-10 rounded-md bg-white p-1">
+                <img
+                  src="/images/Vellore_Institute_of_Technology_seal_2017.svg.png"
+                  className="w-full h-full"
+                ></img>
+              </div>
+              <div>
+                <p className="text-sm">Vellore Institute of Technology</p>
+                <p className="font-bold">July 2024 - Present</p>
+              </div>
             </div>
-            <div>
-              <p className="text-sm">Stratign (Internship)</p>
-              <p className="font-bold">June 2025 - July 2025</p>
+          </a>
+          <a href="https://dpsgs.org/vasundhara">
+            <div className="mt-2 w-full flex gap-2">
+              <div className="w-10 h-10 rounded-md bg-white">
+                <img
+                  src="/images/delhi_public_school_ghaziabad_vasundhara_logo.jpeg"
+                  className="w-full h-full rounded-md"
+                ></img>
+              </div>
+              <div>
+                <p className="text-sm">Delhi Public School Vasundhara</p>
+                <p className="font-bold">April 2010 - April 2024</p>
+              </div>
             </div>
-          </div>
-
-          <div className="mt-2 w-full flex gap-2">
-            <div className="w-10 h-10 rounded-md bg-white p-1">
-              <img
-                src="/images/Vellore_Institute_of_Technology_seal_2017.svg.png"
-                className="w-full h-full"
-              ></img>
-            </div>
-            <div>
-              <p className="text-sm">Vellore Institute of Technology</p>
-              <p className="font-bold">July 2024 - Present</p>
-            </div>
-          </div>
-
-          <div className="mt-2 w-full flex gap-2">
-            <div className="w-10 h-10 rounded-md bg-white">
-              <img
-                src="/images/delhi_public_school_ghaziabad_vasundhara_logo.jpeg"
-                className="w-full h-full rounded-md"
-              ></img>
-            </div>
-            <div>
-              <p className="text-sm">Delhi Public School Vasundhara</p>
-              <p className="font-bold">April 2010 - April 2024</p>
-            </div>
-          </div>
+          </a>
         </div>
 
         <div className="px-5 mt-5 mb-10">

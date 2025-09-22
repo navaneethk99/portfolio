@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Ka1";
+  src: url("/fonts/ka1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Game";
+  src: url("/fonts/dogicapixel.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.techno-font-heading {
+  font-family: "Ka1", Arial, Helvetica, sans-serif;
+}
+
+.techno-font-body {
+  font-family: "Game", Arial, Helvetica, sans-serif;
+}
+
 body {
   background: #0b1117;
   color: white;
