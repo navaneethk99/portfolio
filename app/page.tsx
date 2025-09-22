@@ -54,7 +54,7 @@ const Page = () => {
 
         <div className="flex h-full w-full">
           {/* Left Sidebar */}
-          <div className="bg-[#0D1117] w-120 h-full flex flex-col items-center  overflow-y-auto">
+          <div className="bg-[#0D1117] w-120 h-full flex flex-col items-center overflow-x-hidden overflow-y-auto">
             <div className="w-75 h-75 rounded-full bg-white mt-10">
               <img
                 src="/images/88372623.jpeg"
