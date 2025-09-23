@@ -8,12 +8,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import Image from "next/image";
+
 import React from "react";
 
 const Page = () => {
   return (
     <>
-      <div className="w-screen h-screen desktop-only">
+      <div className="w-screen h-[100vh] desktop-only">
         {/* Top Bar */}
         <div className="bg-black w-full h-23 border-b border-gray-500 flex flex-col justify-end px-2 gap-3">
           <div className="flex gap-3 items-center">
@@ -56,10 +58,12 @@ const Page = () => {
           {/* Left Sidebar */}
           <div className="bg-[#0D1117] w-120 h-full flex flex-col items-center overflow-x-hidden overflow-y-auto">
             <div className="w-75 h-75 rounded-full bg-white mt-10">
-              <img
+              <Image
+                width={10000}
+                height={10000}
+                alt="Landscape picture"
                 src="/images/88372623.jpeg"
                 className="w-full h-full rounded-full"
-                alt="profile"
               />
             </div>
 

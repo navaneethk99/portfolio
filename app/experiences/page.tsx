@@ -1,14 +1,9 @@
 import { faGithub, faReadme } from "@fortawesome/free-brands-svg-icons";
-import {
-  faBook,
-  faBuildingColumns,
-  faGlobe,
-  faGraduationCap,
-  faLocationDot,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBook, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const Page = () => {
   return (
@@ -51,8 +46,11 @@ const Page = () => {
           </div>
         </div>
         <div className="w-full h-full bg-[#0D1117] flex justify-center items-center flex-col">
-          <img
+          <Image
             className="w-150"
+            width={1000}
+            height={1000}
+            alt="Landscape picture"
             src="/images/vecteezy_404-error-in-webpage-template_19633963.png"
           />
           <h1 className="mt-5 text-5xl font-bold">Coming Soon!</h1>
@@ -67,8 +65,11 @@ const Page = () => {
           <p className="font-semibold">navaneethk99</p>
         </div>
         <div className="w-full h-full flex flex-col justify-center items-center px-10">
-          <img
+          <Image
             className="w-150"
+            width={1000}
+            height={1000}
+            alt="Landscape picture"
             src="/images/vecteezy_404-error-in-webpage-template_19633963.png"
           />
           <h1 className="mt-5 text-3xl font-bold">Coming Soon!</h1>
