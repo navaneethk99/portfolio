@@ -15,7 +15,7 @@ import React from "react";
 const Page = () => {
   return (
     <>
-      <div className="w-screen h-[100vh] desktop-only">
+      <div className="w-screen h-[100vh] desktop-only overflow-x-hidden">
         {/* Top Bar */}
         <div className="bg-black w-full h-23 border-b border-gray-500 flex flex-col justify-end px-2 gap-3">
           <div className="flex gap-3 items-center">
